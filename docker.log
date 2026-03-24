@@ -1,0 +1,21 @@
+    1  git clone https://github.com/Agacix2026/jpai_kartkowka_gr2.git
+    2  ls
+    3  cd jpai_kartkowka_gr2
+    4  ls
+    5  nano app.js
+    6  nano package.json
+    7  nano Dockerfile
+    8  docker build -t zaliczenie:v3 .
+    9  nano Dockerfile
+   10  docker build -t zaliczenie:v3 .
+   11  docker run -d -p 4012:3000 --name kontener zaliczenie:v3
+   12  curl -f http://localhost:4012/
+   13  docker ps
+   14  docker stop kontener
+   15  docker ps
+   16  docker ps -la
+   17  docker rm kontener
+   18  docker ps -la
+   19  docker rmi zaliczenie:v3
+   20  docker image rm zaliczenie:v3
+   21  history | tee docker.log
